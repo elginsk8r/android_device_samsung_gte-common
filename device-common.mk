@@ -17,6 +17,9 @@
 # Inherit from common
 $(call inherit-product, device/samsung/msm8916-common/msm8916.mk)
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
 # This is a tablet.
 PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_AAPT_CONFIG := xlarge
